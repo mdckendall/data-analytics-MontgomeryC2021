@@ -26,7 +26,9 @@ class Menus{
     System.out.println("Press 5 to quit.");
 
     Scanner consoleScanner = new Scanner(System.in);
-    int path = consoleScanner.nextInt();
+    int path = (int) Integer.valueOf(consoleScanner.nextLine());
+    System.out.println("Test");
+    System.out.println(path);
     
     switch (path){
       case 1: { System.out.println("$98,345 average salary in South Florida!"); return true; }
