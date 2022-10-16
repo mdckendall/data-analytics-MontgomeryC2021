@@ -26,7 +26,7 @@ class Menus{
     System.out.println("Press 5 to quit.");
 
     Scanner consoleScanner = new Scanner(System.in);
-    int path = 5;
+    int path = 5; //ERROR HANDLE
     if (consoleScanner.hasNext())
     { path = consoleScanner.nextInt(); }
     
@@ -44,7 +44,8 @@ class Menus{
     
     FileReader fr = new FileReader("names.txt");
     Scanner fileScanner = new Scanner(fr);
-    
+
+    System.out.println("Current Students:");
     while(fileScanner.hasNext())
     { System.out.println(fileScanner.nextLine()); }
     
